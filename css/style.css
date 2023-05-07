@@ -13,6 +13,11 @@ h2 {
     font-weight: bold;
 }
 
+strong {
+    font-weight: bold;
+    font-style: italic;
+}
+
 p {
     text-indent: 1em;
 }
