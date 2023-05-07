@@ -35,10 +35,10 @@
                     Aerospace Engineers are concerned with the dynamics of vehicles in air and space. One prominent field of Aerospace Engineering is rocketry. Rocketry encompasses many disciplines, and there are too many applications of Calculus to give a comprehensive list in a small project. So, we have decided to focus on two applications of Calculus that are particularly useful in rocketry.
                 </p>
                 <p>
-                    These two applications are the rocket equation and the Navier-Stokes Equations. The rocket equation relates the starting and ending mass of a rocket with the gain in velocity. This is important if you need to achieve a specific velocity and you only have the mass of the rocket, the mass of the fuel, and the velocity of the exhaust particles to work with. In this presentation, we derive the rocket equation from a and important principle in physics call the conservation of momentum.
+                    These two applications are the rocket equation and the Navier-Stokes Equations. The rocket equation relates the starting and ending mass of a rocket with its gain in velocity. This is important if you need to achieve a specific velocity and you only have the mass of the rocket, the mass of the fuel, and the velocity of the exhaust particles to work with. In this presentation, we derive the rocket equation from an important principle in physics called the conservation of momentum.
                 </p>
                 <p>
-                    The Navier-Stokes Equations are an important tool in fluid dynamics. They relate the pressure, viscosity, and momentum to the rate at which fluid flows in all directions. Using these equations, one can model how a fluid will flow given certain initial conditions. This is important for modelling how air will flow around the cone of a rocket, or how exhaust from the rocket engine will move inside the cone. In this presentation, we solve a simple fluid dynamics problem using the Navier-Stokes Equations.
+                    The Navier-Stokes Equations are an important tool in fluid dynamics. They relate the pressure, viscosity, and momentum of a fluid to the rate at which it flows in all directions. Using these equations, one can model how a fluid will behave given certain initial conditions. This is important for modelling how air will flow around the cone of a rocket, or how exhaust from a rocket engine will move inside the nozzle. In this presentation, we solve a simple fluid dynamics problem using the Navier-Stokes Equations.
                 </p>
                 <div id="team-list">
                     Below is a list of the team members and which problem they solved.
@@ -54,11 +54,11 @@
             <section>
                 <h1>Rocket Equation</h1>
                 <p>
-                    Figuring out how much velocity a rocket gains after burning some of its fuel is an important thing for rocket engineers to figure out. To do this, they have developed an equation known as the <strong>rocket equation</strong>. The rocket equation equates a rocket’s beginning and ending mass to the change in velocity after a burn. To derive it, scientists used Calculus and the <strong>conservation of momentum</strong>.
+                    Figuring out how much velocity a rocket gains after burning some of its fuel is important for Aerospace Engineers. To do this, they developed an equation known as the <strong>rocket equation</strong>. The rocket equation equates a rocket&#39;s beginning and ending mass to its change in velocity after a burn. To derive it, scientists used Calculus and the <strong>conservation of momentum</strong>.
                 </p>
                 <h2>Conservation of Momentum</h2>
                 <p>
-                    The conservation of momentum is a law of physics that says that the total momentum of a closed system remains constant as the system evolves in time. 
+                    Conservation of momentum is a law of physics that says that the total momentum of a closed system remains constant as the system evolves in time. 
                 </p>
                 <div class="equation">
                     \[momentum:\ p=mv\]
@@ -70,10 +70,10 @@
                 <div class="picture"><img id="rckt-before" src="./img/RE/rocket-1.png" alt="rocket before"></div>
                 <div class="picture"><img id="rckt-after" src="./img/RE/rocket-2.png" alt="rocket after"></div>
                 <p>
-                    Before the burn, the rocket’s momentum is \(p=mv_0\). During the burn, the rocket expels tiny particles of exhaust propellent (\(dm\)) which are tiny pieces of the total mass of the rocket. Every little particle has a velocity of \(v_e\). Even though the exhaust velocity is constant, the velocity of each particle from the perspective of the system is \(v_0-v_e\). This is because the momentum of the system is dependent on an <strong>inertial reference frame</strong>. Basically, this is what a person standing still on the ground would measure the velocities of the parts in the system to be.
+                    Before the burn, the rocket&#39;s momentum is \(p=mv_0\). During the burn, the rocket expels tiny particles of exhaust propellent (\(dm\)) which are tiny pieces of the total mass of the rocket. Every little particle has a velocity of \(v_e\). Even though the exhaust velocity is constant, the velocity of each particle from the perspective of the system is \(v_0-v_e\). This is because the momentum of the system is dependent on an <strong>inertial reference frame</strong>. Basically, this is what a person standing still on the ground would measure the velocities of the parts in the system to be.
                 </p>
                 <p>
-                    After expelling the particle, the rocket’s mass is \(m-dm\), and the rocket’s new velocity is \(v_0+dv\), where \(dv\) is a tiny change in velocity due to <strong>Newton’s Second Law</strong> (which states that every action has an equal and opposite reaction). The total momentum of the rocket before the burn must be equal to the total momentum after the burn. So, the equation of the total momentum is as follows:
+                    After expelling the particle, the rocket&#39;s mass is \(m-dm\), and the rocket&#39;s new velocity is \(v_0+dv\), where \(dv\) is a tiny change in velocity due to <strong>Newton&#39;s Second Law</strong> (which states that every action has an equal and opposite reaction). The total momentum of the rocket before the burn must be equal to the total momentum after the burn. So, the equation of the total momentum is as follows:
                 </p>
                 <div class="equation">
                     \[{\rm mv}_0=dm\left(v_0-v_e\right)+\left(m-dm\right)\left(v_0+dv\right)\]
@@ -86,7 +86,7 @@
                     \[0=-v_edm+mdv-dmdv\]
                 </div>
                 <p>
-                    The quantity \(dmdv\) is the tiny change in the rocket’s mass times the tiny change in velocity, which will be a very tiny quantity. So tiny, in fact, that its impact on the total momentum is negligible. It can be removed without consequence. This leaves us with the following.
+                    The quantity \(dmdv\) is the tiny change in the rocket&#39;s mass times the tiny change in velocity, which will be a very tiny quantity. So tiny, in fact, that its impact on the total momentum is negligible. It can be removed without consequence. This leaves us with the following.
                 </p>
                 <div class="equation">
                     \[v_edm=mdv\]
@@ -105,7 +105,7 @@
                     \[f(m)=\frac{1}{m}\]
                 </div>
                 <p>
-                    Since the changes are continuous and the change in mass and velocity are both very tiny (almost zero), we can use integrals to relate the total change in mass to the total change in velocity. The boundaries of integration of the velocity side will be from the rocket’s initial velocity to a final velocity, and the boundaries of integration of the mass side will be from the rocket’s initial mass to the final mass after the fuel is spent.
+                    Since the changes are continuous and the change in mass and velocity are both very tiny (almost zero), we can use integrals to relate the total change in mass to the total change in velocity. The boundaries of integration of the velocity side will be from the rocket&#39;s initial velocity to a final velocity, and the boundaries of integration of the mass side will be from the rocket&#39;s initial mass to the final mass after the fuel is spent.
                 </p>
                 <div class="equation">
                     \[\int_{v_0}^{v_f}dv=v_e\int_{m_0}^{m_f}{\frac{1}{m}dm}\]
@@ -137,13 +137,13 @@
 
                 <div class="picture"><img src="./img/NSE/vector.png" class="NS-img-wide" alt="single vector"></div>
                 <p>
-                    Quantities that are vectors (so called <strong>vector quantities</strong>) are usually indicated with a bar or arrow above them (like \(\bar{u}\) or \(\vec{u}\)). Vectors are made up of x-direction and y-direction components and can be expressed in different ways, all of which are equally valid.
+                    Quantities that are vectors (so called <strong>vector quantities</strong>) are usually indicated with a bar or arrow above them (like \(\bar{u}\) or \(\vec{u}\)). Vectors are made up of \(x\)-direction and \(y\)-direction components and can be expressed in different ways, all of which are equally valid.
                 </p>
                 <div class="equation">
                     \[\bar{u}=1\hat{i}+2\hat{j}, \bar{u}=\langle1,2\rangle, \bar{u}=\left[\begin{matrix}1\\2\\\end{matrix}\right]\]
                 </div>
                 <p>
-                    These are a few ways of expressing a vector that has one unit in the x- direction and two units in the y- direction. \(\hat{i}\) and \(\hat{j}\) are called <strong>hat vectors</strong> and represent the most fundamental step in a particular direction. \(\hat{i}\) represents the x-direction. \(\hat{j}\) represents the y-direction. The magnitude of the vector is the distance from the starting point to the ending point of the vector. This is found using the distance equation, \(d=\sqrt{\left(x_1-x_0\right)^2+\left(y_1-y_0\right)^2}\). The vector has an angle (\(\theta\)) associated with it as well. Vector angles are generally measured counterclockwise from the x-axis (pointing right).
+                    These are a few ways of expressing a vector that has one unit in the \(x\)-direction and two units in the \(y\)-direction. \(\hat{i}\) and \(\hat{j}\) are called <strong>hat vectors</strong> and represent the most fundamental step in a particular direction. \(\hat{i}\) represents the \(x\)-direction. \(\hat{j}\) represents the \(y\)-direction. The magnitude of the vector is the distance from the starting point to the ending point of the vector. This is found using the distance equation, \(d=\sqrt{\left(x_1-x_0\right)^2+\left(y_1-y_0\right)^2}\). The vector has an angle (\(\theta\)) associated with it as well. Vector angles are generally measured counterclockwise from the \(x\)-axis (pointing right).
                 </p>
                 <div class="picture"><img src="./img/NSE/vector-angle.png" class="NS-img-wide" alt="vector with angle"></div>
                 <p>
@@ -151,7 +151,7 @@
                 </p>
                 <div class="picture"><img src="./img/NSE/two-vectors.png" class="NS-img-wide" alt="two vectors"></div>
                 <p>
-                    Even though the two vectors pictured above have different starting and ending points, <strong>they are the same vector</strong>. Vectors that have the same angle and magnitude are identical, regardless of where they start from. For this reason, vectors are graphed from the origin, (0,0), to the coordinate (x-component, y-component). This makes finding the magnitude and angle of the vector more straightforward.
+                    Even though the two vectors pictured above have different starting and ending points, <strong>they are the same vector</strong>. Vectors that have the same angle and magnitude are identical, regardless of where they start from. For this reason, vectors are graphed from the origin, (0,0), to the coordinate (\(x\)-component, \(y\)-component). This makes finding the magnitude and angle of the vector more straightforward.
                 </p>
                 <p>
                     By changing the components of the vector, you cause it to shorten or elongate and rotate about the origin. Negative vectors (i.e., \(-\bar{u}\)) are vectors that have the same magnitude as their positive versions but point in the opposite direction.
@@ -166,16 +166,16 @@
                 </p>
                 <div class="picture"><img src="./img/NSE/2d-vector-field.png" class="NS-img-bg" alt="vector field"></div>
                 <p>
-                    Choosing a coordinate in a vector field is like dropping a tiny particle at that x, y coordinate. The vector at that coordinate tells you how that particle will move from where it is. It will move in a certain direction for a certain distance.
+                    Choosing a coordinate in a vector field is like dropping a tiny particle at that \(x\), \(y\) coordinate. The vector at that coordinate tells you how that particle will move from where it is. It will move in a certain direction for a certain distance.
                 </p>
                 <p>
                     Vector fields are defined the same way as vectors, but each component can be a function of multiple variables. Here is an example:
                 </p>
                 <div class="equation">
-                    \[\vec{V}=y\hat{i}\ +(y\ -\ x)\hat{j}\]
+                    \[\vec{V}=y\hat{i}\ +(y-x)\hat{j}\]
                 </div> 
                 <p>
-                    This vector field says that for any coordinate (\(x\), \(y\)), the \(x\)-direction will be y units long, and the y-direction will be y - x units long. So, at the coordinate (1, 2) the vector will be 2,1, and a particle would move up 2 units and to the right 1 unit.
+                    This vector field says that for any coordinate (\(x\), \(y\)), the \(x\)-direction will be \(y\) units long, and the \(y\)-direction will be \(y-x\) units long. So, at the coordinate (1, 2) the vector will be 2,1, and a particle would move up 2 units and to the right 1 unit.
                 </p>
                 <div class="picture"><img src="./img/NSE/specific-vector-1.png" class="NS-img-sm" alt="vector at (1, 2)"></div>
                 <p>
@@ -194,11 +194,11 @@
                     \[\frac{\partial f}{\partial x}=2xy^2+\sin{y}\]
                 </div>
                 <p>
-                    Only the terms that contain x are differentiated. Any functions of y (like \(y^2\) or \(\sin{y}\)) are treated as if they are constants and either not changed or eliminated (because \(\frac{d}{dx}k=0\), where \(k\) is a constant). This is the essence of multivariable derivatives.
+                    Only the terms that contain \(x\) are differentiated. Any functions of \(y\) (like \(y^2\) or \(\sin{y}\)) are treated as if they are constants and either not changed or eliminated (because \(\frac{d}{dx}k=0\), where \(k\) is a constant). This is the essence of multivariable derivatives.
                 </p>
                 <h2>Gradient and Divergence</h2>
                 <p>
-                    Vector fields are composed of components that are themselves functions of multiple variables. Often, it is necessary to understand how a vector field is changing in each of its directions. To do this, one must find the partial derivatives with respect to each of the directions of each component. If the vector field is \(\vec{V}=u(x,y)\hat{i}+v(x,y)\hat{j}\), and \(u\left(x,y\right)=x^2y\), \(v\left(x,y\right)=\frac{y}{x}\), then the change in the components of each direction are \(\vec{V}\prime=\frac{\partial u}{\partial x}\hat{i}+\frac{\partial v}{\partial y}\hat{j}=2xy\hat{i}+\frac{1}{x}\hat{j}\). Each component is differentiated with respect to the direction (x or y) that it affects.
+                    Vector fields are composed of components that are themselves functions of multiple variables. Often, it is necessary to understand how a vector field is changing in each of its directions. To do this, one must find the partial derivatives with respect to each of the directions of each component. If the vector field is \(\vec{V}=u(x,y)\hat{i}+v(x,y)\hat{j}\), and \(u\left(x,y\right)=x^2y\), \(v\left(x,y\right)=\frac{y}{x}\), then the change in the components of each direction are \(\vec{V}\prime=\frac{\partial u}{\partial x}\hat{i}+\frac{\partial v}{\partial y}\hat{j}=2xy\hat{i}+\frac{1}{x}\hat{j}\). Each component is differentiated with respect to the direction (\(x\) or \(y\)) that it affects.
                 </p>
                 <p>
                     There is a special name for the derivative of a vector field: the <strong>gradient</strong>. Its symbol is called the “del” or “nabla” symbol (\(\nabla\)), which is referred to as an <strong>operator</strong> (an operator is like a function that acts on inputs; addition, +, is an operator that adds two numbers together; a derivative, \(\frac{d}{dx}\), is an operator that differentiates a function with respect to a variable, etc.). The del operator can be used in different ways. Another property of vector fields that uses the del operator is <strong>divergence</strong>.
@@ -224,7 +224,7 @@
                 </p>
                 <div class="picture"><img src="./img/NSE/source-example.png" class="NS-img-bg" alt="source example"></div>
                 <p>
-                    If the divergence is zero, the vector field is <strong>non-compressible</strong>. That means that the same number of arrows are entering a region as leaving.
+                    If the divergence is zero, the vector field is <strong>non-compressible</strong>. That means that the same number of arrows are entering a region as leaving it.
                 </p>
                 <div class="picture">
                     <img src="./img/NSE/zero-divergence-example.png" class="NS-img-bg" alt="zero divergence example">
@@ -245,7 +245,7 @@
                 \[\rho\left(\frac{\partial v}{\partial t}+u\frac{\partial v}{\partial x}+v\frac{\partial v}{\partial y}\right)=\rho{\bar{g}}_y-\frac{\partial P}{\partial y}+\mu\left(\frac{\partial^2v}{\partial x^2}+\frac{\partial^2v}{\partial y^2}\right)\]
             </div>
             <p>
-                The vector field, \(\vec{F}\), is composed of \(u\) (the x-direction component) and \(v\) (the y-direction component). Both \(u\) and \(v\) are functions of \(x\) and \(y\). The first equation says that the divergence is zero. This is known as the <strong>conservation of mass</strong> equation. The second and third equations relate the momentum (\(\rho\)), viscosity (\(mu\)), gravity field (\(\bar{g}\)), pressure (\(P\)), and vector field components (\(u\) and \(v\)) together. There is one equation for each direction of the vector field.
+                The vector field, \(\vec{F}\), is composed of \(u\) (the \(x\)-direction component) and \(v\) (the \(y\)-direction component). Both \(u\) and \(v\) are functions of \(x\) and \(y\). The first equation says that the divergence is zero. This is known as the <strong>conservation of mass</strong> equation. The second and third equations relate the momentum (\(\rho\)), viscosity (\(mu\)), gravity field (\(\bar{g}\)), pressure (\(P\)), and vector field components (\(u\) and \(v\)) together. There is one equation for each direction of the vector field.
             </p>
             <p>
                 Since the NS equations are difficult partial differential equations, solutions to them are approximations, and it is unknown if there are solutions for every three-dimensional vector field. However, there are always solutions for two-dimensional vector fields. It is possible to model rocket exhaust using the NS equations, but that is immensely difficult, and the math required is far outside the scope of Calculus 1. There are less complicated solutions that simplify to single variable vector fields that can be solved using the tools in Calculus 1.
@@ -260,7 +260,7 @@
             <div class="picture"><img src="./img/NSE/ns-specific-problem.png" class="NS-img-bg" alt="max flow rate problem"></div>
             <h2>Solution</h2>
             <p>
-                With the information given to us in the description, we can cancel out serval terms. The fluid is flowing in only one direction (the \(x\)-direction), the vector field will be in the form \(\vec{F}=u\hat{i}+0\hat{j}\). Since \(v=0\), any term that has a \(v\) in it is also zero, and the entire second equation will also be zero. The fluid is flowing steadily. That means that the change in the x-direction of the field (\(\frac{\partial u}{\partial t}\)) is zero. The entire gravity vector is zero. We can also figure out what \(\frac{\partial u}{\partial x}\) is also because of the conservation of mass equation.
+                With the information given to us in the description, we can cancel out serval terms. The fluid is flowing in only one direction (the \(x\)-direction), the vector field will be in the form \(\vec{F}=u\hat{i}+0\hat{j}\). Since \(v=0\), any term that has a \(v\) in it is also zero, and the entire second equation will also be zero. The fluid is flowing steadily. That means that the change in the \(x\)-direction of the field (\(\frac{\partial u}{\partial t}\)) is zero. The entire gravity vector is zero. We can also figure out what \(\frac{\partial u}{\partial x}\) is also because of the conservation of mass equation.
             </p>
             <div class="equation">
                 \[\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}=0\]
@@ -277,19 +277,19 @@
                 \[\frac{\partial^2u}{\partial y^2}=\frac{1}{\mu}\frac{\partial P}{\partial x}\]
             </div>
             <p>
-                The pressure only has an x-direction component. So, pressure is a function of x only. By examining the picture of the problem, we can tell that the horizontal length of every vector in the field is the same from left to right (along the x-axis), but the horizontal length of the vectors is different from top to bottom. As x changes, u stays the same, but as y changes, u changes as well. This means that u is a function of y only. Since both the pressure and horizontal component of the vector field are functions of a single variable, we can rewrite their partial derivatives as single variable derivatives.
+                The pressure only has an \(x\)-direction component. So, pressure is a function of \(x\) only. By examining the picture of the problem, we can tell that the horizontal length of every vector in the field is the same from left to right (along the \(x\)-axis), but the horizontal length of the vectors is different from top to bottom. As \(x\) changes, \(u\) stays the same, but as \(y\) changes, \(u\) changes as well. This means that \(u\) is a function of \(y\) only. Since both the pressure and horizontal component of the vector field are functions of a single variable, we can rewrite their partial derivatives as single variable derivatives.
             </p>
             <div class="equation">
                 \[\frac{d^2u}{dy^2}=\frac{1}{\mu}\frac{dP}{dx}\]
             </div>
             <p>
-                Fluids flow from higher pressure to lower pressure. This means that as the x increases, the pressure decreases at a constant rate. The pressure vector is \(\bar{P}=-300x\hat{i}+0\hat{j}\). Thus, \(\frac{dP}{dx}=-300\). The viscosity is 0.001 Pa∙S.
+                Fluids flow from higher pressure to lower pressure. This means that as the \(x\) increases, the pressure decreases at a constant rate. The pressure vector is \(\bar{P}=-300x\hat{i}+0\hat{j}\). Thus, \(\frac{dP}{dx}=-300\). The viscosity is 0.001 Pa∙S.
             </p>
             <div class="equation">
                 \[\frac{d^2u}{dy^2}=-\frac{300}{0.001}=-300,000\]
             </div>
             <p>
-                We can solve for u by double integrating the second derivative.
+                We can solve for \(u\) by double integrating the second derivative.
             </p>
             <div class="equation">
                 \[\frac{du}{dy}=\int{-300,000dy=-300,000y+C_1}\]
@@ -312,14 +312,14 @@
                 \[C_2=150,000\left(0.0001\right)\]
             </div>
             <p>
-                The final value of u is this:
+                The final value of \(u\) is this:
             </p>
             <div class="equation">
                 \[u=-150,000y^2+150,000\left(0.0001\right)\]
                 \[u=150,000\left(0.0001-y^2\right)\]
             </div>
             <p>
-                The flow rate is at its maximum in the middle of the plates (where y = 0).
+                The flow rate is at its maximum in the middle of the plates (where \(y=0\)).
             </p>
             <div class="equation">
                 \[u_{max}=150,000\left(0.0001-0\right)\]
