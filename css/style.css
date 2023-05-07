@@ -1,0 +1,89 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-indent: 1em;
+}
+
+#large-content {
+    background-image: url("/img/star_background.png");
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+}
+
+#fuselage {
+    background-color: #888888;
+}
+
+#fuselage:hover {
+    box-shadow: 0px 0px 10px #ffff00;
+}
+
+#intro {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+#rocket-equation {
+    margin: 0;
+    background-color: #cccccc;
+}
+
+#vector-intro {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+#ns-equations {
+    margin: 0;
+    background-color: #cccccc;
+}
+
+#conclusion {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+section {
+    margin: 0px 15px 0px 15px;
+}
+
+#team-list {
+    text-align: center;
+}
+
+#team-list ul {
+    list-style-type: none;
+    text-shadow: 2px 2px 2px #888;
+    font-weight: bold;
+}
+
+.picture {
+    text-align: center;
+    margin: 10px;
+}
+
+.separator {
+    margin: 0;
+    background-color: #000000;
+    width: 100%;
+    height: 0px;
+    border-top: 5px solid #333333;
+    border-right: 5px solid #333333;
+    border-bottom: 5px solid #aaaaaa;
+    border-left: 5px solid #aaaaaa;
+    box-shadow: 0px 0px 20px #000000;
+}
