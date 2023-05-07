@@ -67,8 +67,8 @@
                 <p>
                     In the first equation, \(p\) is momentum, \(m\) is mass, and \(v\) is the velocity of the mass. The second equation says that the sum of the momentum of every part of the system before an event is equal to the sum of the momentum of the parts after the event. Conservation of momentum is one of the most important equations in physics. It is fundamental to many equations and laws. By examining a rocket before and after burning fuel and expelling exhaust propellent, we can use this principle to define the rocket equation.
                 </p>
-                <div class="picture"><img src="./img/RE/rocket-1.png" alt="rocket before"></div>
-                <div class="picture"><img src="./img/RE/rocket-2.png" alt="rocket after"></div>
+                <div class="picture"><img id="rckt-before" src="./img/RE/rocket-1.png" alt="rocket before"></div>
+                <div class="picture"><img id="rckt-after" src="./img/RE/rocket-2.png" alt="rocket after"></div>
                 <p>
                     Before the burn, the rocket’s momentum is p=mv_0. During the burn, the rocket expels tiny particles of exhaust propellent (\(dm\)) which are tiny pieces of the total mass of the rocket. Every little particle has a velocity of \(v_e\). Even though the exhaust velocity is constant, the velocity of each particle from the perspective of the system is \(v_0-v_e\). This is because the momentum of the system is dependent on an <strong>inertial reference frame</strong>. Basically, this is what a person standing still on the ground would measure the velocities of the parts in the system to be.
                 </p>
@@ -135,7 +135,7 @@
                     A vector is a mathematical object that has both a <strong>direction</strong> and a <strong>magnitude</strong>. Vectors can be two-dimensional, three-dimensional, or higher. For simplicity, only two-dimensional vectors are discussed here. Vectors are often represented with arrows. 
                 </p>
 
-                <div class="picture"><img src="./img/NSE/vector.png" alt="single vector"></div>
+                <div class="picture"><img src="./img/NSE/vector.png" class="NS-img-wide" alt="single vector"></div>
                 <p>
                     Quantities that are vectors (so called <strong>vector quantities</strong>) are usually indicated with a bar or arrow above them (like \(\bar{u}\) or \(\vec{u}\)). Vectors are made up of x-direction and y-direction components and can be expressed in different ways, all of which are equally valid.
                 </p>
@@ -145,18 +145,18 @@
                 <p>
                     These are a few ways of expressing a vector that has one unit in the x- direction and two units in the y- direction. \(\hat{i}\) and \(\hat{j}\) are called <strong>hat vectors</strong> and represent the most fundamental step in a particular direction. \(\hat{i}\) represents the x-direction. \(\hat{j}\) represents the y-direction. The magnitude of the vector is the distance from the starting point to the ending point of the vector. This is found using the distance equation, \(d=\sqrt{\left(x_1-x_0\right)^2+\left(y_1-y_0\right)^2}\). The vector has an angle (\(\theta\)) associated with it as well. Vector angles are generally measured counterclockwise from the x-axis (pointing right).
                 </p>
-                <div class="picture"><img src="./img/NSE/vector-angle.png" alt="vector with angle"></div>
+                <div class="picture"><img src="./img/NSE/vector-angle.png" class="NS-img-wide" alt="vector with angle"></div>
                 <p>
                     The component values of the vector can be from one point to another point, or they can be from the origin to the given coordinate.
                 </p>
-                <div class="picture"><img src="./img/NSE/two-vectors.png" alt="two vectors"></div>
+                <div class="picture"><img src="./img/NSE/two-vectors.png" class="NS-img-wide" alt="two vectors"></div>
                 <p>
                     Even though the two vectors pictured above have different starting and ending points, <strong>they are the same vector</strong>. Vectors that have the same angle and magnitude are identical, regardless of where they start from. For this reason, vectors are graphed from the origin, (0,0), to the coordinate (x-component, y-component). This makes finding the magnitude and angle of the vector more straightforward.
                 </p>
                 <p>
                     By changing the components of the vector, you cause it to shorten or elongate and rotate about the origin. Negative vectors (i.e., \(-\bar{u}\)) are vectors that have the same magnitude as their positive versions but point in the opposite direction.
                 </p>
-                <div class="picture"><img src="./img/NSE/various-vectors.png" alt="various vectors"></div>
+                <div class="picture"><img src="./img/NSE/various-vectors.png" class="NS-img-thin" alt="various vectors"></div>
                 <p>
                     In the above picture, vectors \(\bar{u}\) and \(-\bar{u}\) have the same magnitude of \(\sqrt{\left(1^2+1^2\right)}=\sqrt{\left(\left(-1\right)^2+\left(-1\right)^2\right)}=\sqrt{\left(2\right)}\) but are pointing in opposite directions. Vector \(\bar{v}\), on the other hand, has a magnitude of \(\sqrt{\left(\frac{1}{4}\right)^2+\left(\frac{7}{4}\right)^2}=\frac{5\sqrt2}{4}\) and is pointing in a direction different from either of the other vectors.
                 </p>
@@ -164,7 +164,7 @@
                 <p>
                     A <strong>vector field</strong> is, basically, a graph that assigns a different vector to every coordinate of the graph.
                 </p>
-                <div class="picture"><img src="./img/NSE/2d-vector-field.png" width="600px" height="600px" alt="vector field"></div>
+                <div class="picture"><img src="./img/NSE/2d-vector-field.png" class="NS-img-bg" alt="vector field"></div>
                 <p>
                     Choosing a coordinate in a vector field is like dropping a tiny particle at that x, y coordinate. The vector at that coordinate tells you how that particle will move from where it is. It will move in a certain direction for a certain distance.
                 </p>
@@ -175,33 +175,33 @@
                     \[\vec{V}=y\hat{i}\ +(y\ -\ x)\hat{j}\]
                 </div> 
                 <p>
-                    This vector field says that for any coordinate (x, y), the x-direction will be y units long, and the y-direction will be y - x units long. So, at the coordinate (1, 2) the vector will be 2,1, and a particle would move up 2 units and to the right 1 unit.
+                    This vector field says that for any coordinate (\(x\), \(y\)), the \(x\)-direction will be y units long, and the y-direction will be y - x units long. So, at the coordinate (1, 2) the vector will be 2,1, and a particle would move up 2 units and to the right 1 unit.
                 </p>
-                <div class="picture"><img src="./img/NSE/specific-vector-1.png" alt="vector at (1, 2)"></div>
+                <div class="picture"><img src="./img/NSE/specific-vector-1.png" class="NS-img-sm" alt="vector at (1, 2)"></div>
                 <p>
                     At coordinate (3, 1) the vector is 1,-2, and a particle would move down 2 units and to the right 1 unit.
                 </p>
-                <div class="picture"><img src="./img/NSE/specific-vector-2.png" alt="vector at (3, 1)"></div>
+                <div class="picture"><img src="./img/NSE/specific-vector-2.png" class="NS-img-thin" alt="vector at (3, 1)"></div>
                 <p>
                     Since vector fields contain functions of multiple variables, it is helpful to understand how to calculate rates of change with multiple variables.
                 </p>
                 <h2>Derivatives of Multivariable Functions</h2>
                 <p>
-                    The rules for derivatives for multivariable functions are almost identical to single variable derivatives, but with a few twists. When working with functions (f) of a single variable, the way you indicate a derivative is \(\frac{df}{dx}\). When there are multiple variables, however, things are a bit more complicated. When finding the derivative with respect to only one variable, every other variable is treated like a constant, and you use \frac{\partial f}{\partial x} to indicate the derivative. The symbol \(\partial\) is called a <strong>partial derivative</strong>. It means that only the designated variable will affect the derivative. Here is an example:
+                    The rules for derivatives for multivariable functions are almost identical to single variable derivatives, but with a few twists. When working with functions (\(f\)) of a single variable, the way you indicate a derivative is \(\frac{df}{dx}\). When there are multiple variables, however, things are a bit more complicated. When finding the derivative with respect to only one variable, every other variable is treated like a constant, and you use \(\frac{\partial f}{\partial x}\) to indicate the derivative. The symbol \(\partial\) is called a <strong>partial derivative</strong>. It means that only the designated variable will affect the derivative. Here is an example:
                 </p>
                 <div class="equation">
                     \[f\left(x,y\right)=x^2y^2+x\sin{y}+y^3\]
                     \[\frac{\partial f}{\partial x}=2xy^2+\sin{y}\]
                 </div>
                 <p>
-                    Only the terms that contain x are differentiated. Any functions of y (like y^2 or \sin{y}) are treated as if they are constants and either not changed or eliminated (because \frac{d}{dx}k=0, where k is a constant). This is the essence of multivariable derivatives.
+                    Only the terms that contain x are differentiated. Any functions of y (like \(y^2\) or \(\sin{y}\)) are treated as if they are constants and either not changed or eliminated (because \(\frac{d}{dx}k=0\), where \(k\) is a constant). This is the essence of multivariable derivatives.
                 </p>
                 <h2>Gradient and Divergence</h2>
                 <p>
                     Vector fields are composed of components that are themselves functions of multiple variables. Often, it is necessary to understand how a vector field is changing in each of its directions. To do this, one must find the partial derivatives with respect to each of the directions of each component. If the vector field is \(\vec{V}=u(x,y)\hat{i}+v(x,y)\hat{j}\), and \(u\left(x,y\right)=x^2y\), \(v\left(x,y\right)=\frac{y}{x}\), then the change in the components of each direction are \(\vec{V}\prime=\frac{\partial u}{\partial x}\hat{i}+\frac{\partial v}{\partial y}\hat{j}=2xy\hat{i}+\frac{1}{x}\hat{j}\). Each component is differentiated with respect to the direction (x or y) that it affects.
                 </p>
                 <p>
-                    There is a special name for the derivative of a vector field: the <strong>gradient</strong>. Its symbol is called the “del” or “nabla” symbol (\nabla), which is referred to as an <strong>operator</strong> (an operator is like a function that acts on inputs; addition, +, is an operator that adds two numbers together; a derivative, \frac{d}{dx}, is an operator that differentiates a function with respect to a variable, etc.). The del operator can be used in different ways. Another property of vector fields that uses the del operator is <strong>divergence</strong>.
+                    There is a special name for the derivative of a vector field: the <strong>gradient</strong>. Its symbol is called the “del” or “nabla” symbol (\(\nabla\)), which is referred to as an <strong>operator</strong> (an operator is like a function that acts on inputs; addition, +, is an operator that adds two numbers together; a derivative, \(\frac{d}{dx}\), is an operator that differentiates a function with respect to a variable, etc.). The del operator can be used in different ways. Another property of vector fields that uses the del operator is <strong>divergence</strong>.
                 </p>
                 <h2>Divergence</h2>
                 <p>
@@ -214,20 +214,20 @@
                 <p>
                     The divergence is a <strong>scalar</strong> quantity (represented by a number that has only one component), and the gradient is a vector quantity. The gradient tells you how a vector field is changing along each axis. Divergence tells you how much <strong>flow</strong> is coming in or going out of a tiny region of the vector field. If arrows represent vectors, then flow would be the concentration of arrows in an area. If you envision a circle around a part of the vector field, the divergence is a measure of how many arrows are coming into or going out of that tiny region.
                 </p>
-                <div class="picture"><img src="./img/NSE/divergence-ex.png" width="600px" height="600px" alt="divergence example"></div>
+                <div class="picture"><img src="./img/NSE/divergence-ex.png" class="NS-img-bg" alt="divergence example"></div>
                 <p>
                     If more arrows are going into the region than coming out, the divergence at that point is negative. An example of this is a <strong>sink</strong>.
                 </p>
-                <div class="picture"><img src="./img/NSE/sink-example.png" width="600px" height="600px" alt="sink example"></div>
+                <div class="picture"><img src="./img/NSE/sink-example.png" class="NS-img-bg" alt="sink example"></div>
                 <p>
                     If more arrows are going away from the circle than coming in, the divergence is positive. An example of this is a <strong>source</strong>.
                 </p>
-                <div class="picture"><img src="./img/NSE/source-example.png" width="600px" height="600px" alt="source example"></div>
+                <div class="picture"><img src="./img/NSE/source-example.png" class="NS-img-bg" alt="source example"></div>
                 <p>
                     If the divergence is zero, the vector field is <strong>non-compressible</strong>. That means that the same number of arrows are entering a region as leaving.
                 </p>
                 <div class="picture">
-                    <img src="./img/NSE/zero-divergence-example.png" width="600px" height="600px" alt="zero divergence example">
+                    <img src="./img/NSE/zero-divergence-example.png" class="NS-img-bg" alt="zero divergence example">
                 </div>
             </section>
         </div>
@@ -257,7 +257,7 @@
             <p>
                 What is the maximum flow rate of a non-compressible, laminar liquid flowing steadily in only one direction between two fixed plates that are one centimeter apart. The liquid has a viscosity of 0.001 Pascal Seconds (Pa∙S) and is driven with a constant pressure of 300 Pascals. The system is on a rocket in orbit. So, gravity is negligible.
             </p>
-            <div class="picture"><img src="./img/NSE/ns-specific-problem.png" width="600px" height="600px" alt="max flow rate problem"></div>
+            <div class="picture"><img src="./img/NSE/ns-specific-problem.png" class="NS-img-bg" alt="max flow rate problem"></div>
             <h2>Solution</h2>
             <p>
                 With the information given to us in the description, we can cancel out serval terms. The fluid is flowing in only one direction (the \(x\)-direction), the vector field will be in the form \(\vec{F}=u\hat{i}+0\hat{j}\). Since \(v=0\), any term that has a \(v\) in it is also zero, and the entire second equation will also be zero. The fluid is flowing steadily. That means that the change in the x-direction of the field (\(\frac{\partial u}{\partial t}\)) is zero. The entire gravity vector is zero. We can also figure out what \(\frac{\partial u}{\partial x}\) is also because of the conservation of mass equation.

@@ -74,6 +74,12 @@ section {
 .picture {
     text-align: center;
     margin: 10px;
+    background-repeat: no-repeat;
+}
+
+/* Images */
+#rocket-before {
+    background-image: url("./../img/RE/rocket-1.png");
 }
 
 .separator {
@@ -85,4 +91,130 @@ section {
     border-right: 5px solid #333333;
     border-bottom: 5px solid #aaaaaa;
     border-left: 5px solid #aaaaaa;
+}
+
+@media (max-width:767px) {
+    body {
+        font-size: 11pt;
+    }
+
+    h1 {
+        font-size: 14pt;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .NS-img-wide {
+        width: 250px;
+        height: 150px;
+    }
+    
+    .NS-img-thin {
+        width: 250px;
+        height: 300px;
+    }
+
+    .NS-img-sm {
+        width: 300px;
+        height: 300px;
+    }
+
+    .NS-img-bg {
+        width: 300px;
+        height: 300px;
+    }
+
+    #rckt-before {
+        width: 200px;
+        height: 75px;
+    }
+
+    #rckt-after {
+        width: 200px;
+        height: 75px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    body {
+        font-size: 12pt;
+    }
+
+    h1 {
+        font-size: 18pt;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .NS-img-wide {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .NS-img-thin {
+        width: 300px;
+        height: 400px;
+    }
+
+    .NS-img-sm {
+        width: 300px;
+        height: 300px;
+    }
+
+    .NS-img-bg {
+        width: 400px;
+        height: 400px;
+    }
+
+    #rckt-before {
+        width: 200px;
+        height: 75px;
+    }
+
+    #rckt-after {
+        width: 200px;
+        height: 75px;
+    }
+}
+
+@media (min-width:992px) {
+    body {
+        font-size: 16pt;
+    }
+
+    h1 {
+        font-size: 28pt;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .NS-img-wide {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .NS-img-thin {
+        width: 300px;
+        height: 400px;
+    }
+
+    .NS-img-sm {
+        width: 300px;
+        height: 300px;
+    }
+
+    .NS-img-bg {
+        width: 500px;
+        height: 500px;
+    }
+
+    #rckt-before {
+        width: 300px;
+        height: 125px;
+    }
+
+    #rckt-after {
+        width: 300px;
+        height: 125px;
+    }
 }
