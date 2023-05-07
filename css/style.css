@@ -67,6 +67,7 @@ section {
 
 #team-list ul {
     list-style-type: none;
+    text-shadow: 2px 2px 2px #888;
     font-weight: bold;
 }
 
@@ -84,5 +85,4 @@ section {
     border-right: 5px solid #333333;
     border-bottom: 5px solid #aaaaaa;
     border-left: 5px solid #aaaaaa;
-    box-shadow: 0px 0px 20px #000000;
 }
